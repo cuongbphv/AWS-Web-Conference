@@ -1,0 +1,76 @@
+.well {
+    min-height: 400px;
+}
+body{
+    color:black;
+}
+a{
+    color: black;
+}
+a:hover{
+    color: hotpink;
+}
+.admin-wrapper{
+    margin-top: 60px;
+}
+
+[class*="col-"] {
+    background-clip: padding-box;
+    border: 5px solid transparent;
+    border-radius: 10px;
+}
+
+a{
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.table, .table th,tr{
+    background: #ffffff;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+}
+
+.btn-style{
+    border-radius: 8px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    padding-top: 5px;
+}
+
+.input-style{
+    margin-bottom: 20px;
+}
+
+.nav ul li{
+    padding-left: 10px;
+}
+
+textarea{
+    resize: none;
+}
+
+.btn {
+    padding        : 5px;
+    font-size      : 12px;
+    border-radius  : 0;
+    border-width   : 1px;
+    margin-left: 5px;
+}
+
+.row{
+    margin-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.show-btn{
+    background: transparent;
+    border: 0px;
+}
+
+.show-btn:hover{
+    display: block;
+}

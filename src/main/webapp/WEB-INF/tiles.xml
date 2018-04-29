@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">  
+        
+<tiles-definitions>  
+ 
+    <!-- Base Define -->
+    <definition name="base.definition" 
+        template="/WEB-INF/layouts/home.jsp">  
+        <put-attribute name="title" value="" />  
+        <put-attribute name="header" value="/WEB-INF/basefragments/_header.jsp" />  
+        <put-attribute name="slidebar" value="/WEB-INF/basefragments/_slidebar.jsp" />  
+        <put-attribute name="body" value="" />  
+        <put-attribute name="footer" value="/WEB-INF/basefragments/_footer.jsp" />  
+    </definition>  
+    
+    
+    <!-- Article Define -->
+    <definition name="article.definition" 
+        template="/WEB-INF/layouts/article.jsp">  
+        <put-attribute name="title" value="" />  
+        <put-attribute name="header" value="/WEB-INF/basefragments/_header.jsp" />  
+        <put-attribute name="slidebar" value="/WEB-INF/basefragments/_slidebar.jsp" />  
+        <put-attribute name="body" value="" />  
+        <put-attribute name="footer" value="/WEB-INF/basefragments/_footer.jsp" />  
+    </definition>  
+    
+    
+     <definition name="admin.definition" 
+        template="/WEB-INF/layouts/admin.jsp">  
+        <put-attribute name="title" value="" />  
+        <put-attribute name="adminheader" value="/WEB-INF/basefragments/_adminheader.jsp" /> 
+        <put-attribute name="adminslidebar" value="/WEB-INF/basefragments/_adminslidebar.jsp" />  
+        <put-attribute name="body" value="" />  
+    </definition>  
+    
+ 
+    <!-- Home Page  -->
+    <definition name="home" extends="base.definition">  
+        <put-attribute name="title" value="Home Page" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_home.jsp" />  
+    </definition>  
+    
+    
+    
+   <!-- Admin page -->
+    <definition name="admin" extends="admin.definition">  
+        <put-attribute name="title" value="Admin Page" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_admin.jsp" />  
+    </definition>  
+    
+       <!-- create article -->
+    <definition name="new-article" extends="admin.definition">  
+        <put-attribute name="title" value="New Article" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_newarticle.jsp" />  
+    </definition>  
+    
+     <!-- edit default-page -->
+    <definition name="edit-default-page" extends="admin.definition">  
+        <put-attribute name="title" value="Edit Page" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_editdefault.jsp" />  
+    </definition>  
+    
+      <!-- list article -->
+    <definition name="list-article-admin" extends="admin.definition">  
+        <put-attribute name="title" value="List Article" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_listarticle.jsp" />  
+    </definition>  
+
+      <!-- list article -->
+    <definition name="list-default-admin" extends="admin.definition">  
+        <put-attribute name="title" value="List Default Page" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_listdefault.jsp" />  
+    </definition>  
+       
+    <!-- Article Page  -->
+    <definition name="article" extends="article.definition">  
+        <put-attribute name="title" value="Article" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_article.jsp" />  
+    </definition>  
+    
+        <!-- Articles Page  -->
+    <definition name="articles" extends="article.definition">  
+        <put-attribute name="title" value="Articles" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_articles.jsp" />  
+    </definition>  
+ 
+     <!-- Default Page  -->
+    <definition name="default" extends="article.definition">  
+        <put-attribute name="title" value="Default Page" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_default.jsp" />  
+    </definition>  
+   
+</tiles-definitions> 
