@@ -48,7 +48,7 @@ public class Quickstart {
 					.getURI()
 					.toString();
 
-			System.out.println(link);
+			System.out.println(link); // check upload successfully
 
 		} catch (IOException e) {
 			e.printStackTrace();
